@@ -8,6 +8,7 @@
     <title>Weather-app</title>
 </head>
 <body>
+    <video id="video-background" autoplay loop muted src="/images/clear.mp4"></video>
     <div class="container">
         <!-- search-box-panel -->
         <div class="search-box">
@@ -15,7 +16,25 @@
             <input type="text" placeholder="Enter Location">
             <button class='bx bx-search-alt'></button>
         </div>
-
+            <div class="toggle-button">
+                <label for="theme" class="theme">
+                    <span class="theme__toggle-wrap">
+                        <input id="theme" class="theme__toggle" type="checkbox" role="switch" name="theme" value="dark">
+                        <span class="theme__fill"></span>
+                        <span class="theme__icon">
+                            <span class="theme__icon-part"></span>
+                            <span class="theme__icon-part"></span>
+                            <span class="theme__icon-part"></span>
+                            <span class="theme__icon-part"></span>
+                            <span class="theme__icon-part"></span>
+                            <span class="theme__icon-part"></span>
+                            <span class="theme__icon-part"></span>
+                            <span class="theme__icon-part"></span>
+                            <span class="theme__icon-part"></span>
+                        </span>
+                    </span>
+                </label>
+            </div>
         <!-- Weather-panel -->
         <div class="weather-box">
             <div class="box">
@@ -50,7 +69,13 @@
                     </div>
                 </div>
             </div>
-        </div>   
+        </div>
+        <div class="not-found">
+            <div class="box">
+            <img src="images/404.png">
+            <p>Location not Found!</p>
+        </div>
+        </div> 
     </div>
     <script src="/js/script.js"></script>
 </body>
